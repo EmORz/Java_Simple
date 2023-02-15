@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world! I am Emanuil from Razgrad.");
@@ -7,6 +9,25 @@ public class Main {
 class HelloJava {
     public static void main(String[] arguments) {
         System.out.println("Hello, Java");
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Entere number: ");
+        var num = input.nextInt();
+        var check = num / 10;
+        var temp = "";
+
+        System.out.println(num);
+
+        while (true){
+            temp+=(num%10);
+            num/=10;
+            //System.out.println(temp);
+            if (num==0){
+                break;
+            }
+        }
+        System.out.println(Integer.parseInt(temp));
+
     }
 }
 
@@ -26,6 +47,7 @@ class TestVariables{
         int b = 123;
 
         System.out.println(a == b);
+        //Test for gist
     }
 
 }
