@@ -1,8 +1,17 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world! I am Emanuil from Razgrad.");
+        int[] x = {1,2,3, 3};
+        Arrays.sort(x); //this will sort the array in ascending order
+
+//so now array x will be x = {2,3,9};
+//now our middle value is in the middle of the array.just get the value of index 1
+//Which is the middle index of the array.
+
+        int middleValue = x[x.length/2]; // 3/2 = will be 1
     }
 }
 
