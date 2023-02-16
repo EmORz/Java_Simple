@@ -51,3 +51,36 @@ class TestVariables{
     }
 
 }
+
+class firstTask{
+
+    public  static  void main(String[] argumets){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter student class:");
+        var student = input.nextByte();
+
+        studentClass(student);
+    }
+
+    public static void studentClass(byte student){
+
+
+        var nachalno = "1-4 klas: nachalno uchilishte";
+        var osnovno = "5-7 klas: osnovno uchilishte";
+        var pyrviGimn = "8-10 klas: pyrvi gimnazialen etap";
+        var vtoriGimn = "11-12 klas: vtori gimnazialen etap";
+        if (student>0&&student<5){
+            System.out.println(nachalno);
+        } else if (student>4&&student<8) {
+            System.out.println(osnovno);
+        }else if (student>7&&student<11) {
+            System.out.println(pyrviGimn);
+        }else if (student>10&&student<13) {
+            System.out.println(vtoriGimn);
+        }else {
+            System.out.println("Error!");
+        }
+
+    }
+
+}
